@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="SignupStyle.css">
+    <link rel="icon" href="a_logo_of_music_1-removebg-preview.png" type="image/png">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="a_logo_of_music_1-removebg-preview.png" alt="Logo">
+            <span>GeoSound</span>
+        </div>
+
+        <h1>Signup</h1>
+
+        <form action="process_signup.php" method="post" id="signup-form">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Number -->
+            <label for="number">Number:</label>
+            <input type="tel" id="number" name="number" required>
+
+            <!-- Password -->
+            <div class="password-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <img src="Screenshot_2023-11-28_204845-removebg-preview.png" alt="Toggle Password" class="password-icon" id="eye-icon" onclick="togglePassword('password', 'eye-icon')">
+            </div>
+
+            <!-- Re-type Password -->
+            <div class="password-container">
+                <label for="retype-password">Re-type Password:</label>
+                <input type="password" id="retype-password" name="retype-password" required>
+                <img src="Screenshot_2023-11-28_204845-removebg-preview.png" alt="Toggle Password" class="password-icon" id="retype-eye-icon" onclick="togglePassword('retype-password', 'retype-eye-icon')">
+            </div>
+            <div id="password-match-message" style="color: red; display: none;">Passwords do not match</div>
+
+            <div id="signup-button">
+                <a href="#" class="round-signup-button">Sign Up Now</a>
+            </div>
+            
+        </form>
+
+        <h2>Harmony Unleashed: Where Every Note Tells a Story</h2>
+    </div>
+
+    <script src="SignupJS.js"></script>
+</body>
+</html>

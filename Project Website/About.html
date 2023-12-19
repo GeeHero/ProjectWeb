@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>About-GeoSound</title>
+
+    <!-- CSS styles -->
+    <link rel="stylesheet" type="text/css" href="About.css">
+    <link rel="icon" href="a_logo_of_music_1-removebg-preview.png" type="image/png">
+    
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="logo-container">
+            <img id="logo" src="a_logo_of_music_1-removebg-preview.png" alt="Logo">
+            <div id="header-text">
+                <span>GeoSound</span>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="Discover.html">Discover</a>
+            <a href="#" class="active">About</a>
+            <a href="SignIn.html" id="sign-in-out-button" onclick="toggleSignIn()"> 
+                <span id="sign-in-text">Sign In</span>
+            </a>
+        </nav>
+    </header>
+    <div id="about-banner">
+        <h1>About GeoSound</h1>
+    </div>
+    
+    <!-- Purpose of this website section -->
+    <section id="purpose-section">
+        <div class="text-box">
+            <h2>Purpose</h2>
+            <p>GeoSound serves as a digital platform dedicated to the exploration, enjoyment, 
+                and dissemination of music. Its primary purpose is to connect music enthusiasts with a 
+                diverse range of artists, genres, and compositions, offering a convenient space for 
+                discovering new music and staying updated on industry trends. Additionally, music websites 
+                often provide resources such as artist profiles, album reviews, and curated playlists, 
+                enhancing the overall user experience and fostering a vibrant online community of music lovers.
+            </p>
+        </div>
+    </section>
+    
+    <!-- About the website section -->
+    <section id="about-section">
+        <div class="text-box">
+        <h3>About</h3>
+        <p>Welcome to GeoSound, your ultimate online destination for a rich and immersive musical experience. 
+            At GeoSound, we are passionate about connecting music enthusiasts with a vast array of genres, 
+            artists, and musical compositions. Explore our curated content, including artist profiles, insightful 
+            album reviews, and carefully crafted playlists that cater to diverse tastes. Whether you're discovering 
+            new sounds or staying updated on the latest industry trends, GeoSound is your go-to platform for 
+            all things music. Join our vibrant online community, where the love for music knows no bounds.
+        </p>
+    </div>
+    
+        <!-- Buttons -->
+        <div class="buttons-container">
+            <a href="https://open.spotify.com/" class="button" target="_blank">Also Try</a>
+            <button class="button" id="contact-button">Contact Us</button>
+        </div>
+
+        <!-- Contact information initially hidden -->
+        <div id="contact-info" style="display: none;">
+            <p>Email: bawit_3200627@letran-edu.ph</p>
+            <p>Phone: +1 (555) 123-4567</p>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('contact-button').addEventListener('click', function () {
+            var contactInfo = document.getElementById('contact-info');
+            if (contactInfo.style.display === 'none' || contactInfo.style.display === '') {
+                contactInfo.style.display = 'block';
+            } else {
+                contactInfo.style.display = 'none';
+            }
+        });
+    </script>

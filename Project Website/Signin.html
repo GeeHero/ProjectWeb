@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="Signin.css">
+    <link rel="icon" href="a_logo_of_music_1-removebg-preview.png" type="image/png">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="a_logo_of_music_1-removebg-preview.png" alt="Logo">
+            <span>GeoSound</span>
+        </div>
+
+        <h1>Sign In</h1>
+
+        <form action="process_signin.php" method="post" id="signup-form">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Password -->
+            <div class="password-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <img src="Screenshot_2023-11-28_204845-removebg-preview.png" alt="Toggle Password" class="password-icon" id="eye-icon" onclick="togglePassword('password', 'eye-icon')">
+            </div>
+
+            <div id="signup-button">
+                <a href="#" class="round-signup-button">Sign In</a>
+            </div>
+            
+        </form>
+        <p>Don't Have an Account? <a href="Signup.html">Click Here</a></p>
+
+        <h2>Harmony Unleashed: Where Every Note Tells a Story</h2>
+    </div>
+
+    <script src="Signin.js"></script>
+</body>
+</html>

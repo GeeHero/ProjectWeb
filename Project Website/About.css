@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(47, 48, 28);
+    background-image: linear-gradient(to bottom, rgb(7, 48, 28), rgb(7, 48, 28), rgb(67, 48, 28));
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    zoom: 100%;
+}
+
+header {
+    font-family: 'Federant', sans-serif;
+    background-color:rgb(47, 48, 28);
+    background-image: linear-gradient(to bottom, rgb(47, 48, 28), rgb(7, 48, 28), rgb(7, 48, 28));
+    color: #AA6C39;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+}
+
+@font-face {
+    font-family: 'Federant';
+    src: url('Federant-Regular.ttf') format('truetype');
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: -50px;
+}
+
+#logo {
+    max-width:95px;
+    max-height: 95px;
+    margin-right: 10px; 
+    margin-left: 70px;
+}
+
+#header-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 45px;
+    padding-top: 6px; 
+    padding-bottom: 13px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #AA6C39;
+    text-align: center;
+    padding: 20px 100px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: -120px;
+}
+
+nav a:hover {
+    color: beige;
+}
+
+nav a.active {
+    color: beige; 
+}
+
+#sign-in-out-button {
+    cursor: pointer; 
+    margin: 30px 90px;
+    font-size: 30px;
+    padding: 10px ;
+}
+
+#sign-in-out-button:hover {
+    color: beige;
+    
+}
+
+#about-banner {
+    font-family: 'Federant';
+    font-size: 26px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 19.1em 20px 19.1em;
+    border-radius: 20px;
+    background-color: rgba(245, 245, 220, 0.095);
+}
+
+#about-banner h1 {
+    color: #AA6C39;
+}
+
+#purpose-section,
+#about-section {
+    font-family: 'Federant';
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 500px 50px;
+    border-radius: 20px;
+    color: #AA6C39;
+    text-align: justify;
+    background-color: rgba(245, 245, 220, 0.086);
+
+.text-box {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.buttons-container a{
+    display: inline-block;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.button {
+    font-family: 'Federant';
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #AA6C39; 
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    color: beige;
+    background-color: rgb(7, 48, 28);
+}
+}
+
+h2 {
+    margin-top: -45px;
+    background-color: rgba(245, 245, 220, 0);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: -39px;
+    background-color: rgba(245, 245, 220, 0);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p{
+    color: beige;
+}

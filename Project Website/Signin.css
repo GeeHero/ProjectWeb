@@ -1,0 +1,142 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(7, 48, 28), rgb(7, 48, 28), rgb(67, 48, 28));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px #AA6C39;
+    color: #AA6C39;
+    background-color: beige;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Federant';
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Federant';
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    height: 70px
+}
+
+label {
+    font-family: 'Federant';
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 1px);
+    padding: 10px;
+    margin-bottom: 40px;
+    box-sizing: border-box; 
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-icon {
+    position: absolute;
+    top: 45%;
+    left: 365px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px; 
+    height: auto;
+    display: none;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    max-width: 100px; 
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+span {
+    font-family: 'Federant';
+    font-size: 50px;
+    line-height: 114px; 
+    vertical-align: bottom;
+}
+
+@font-face {
+    font-family: 'Federant';
+    src: url('Federant-Regular.ttf') format('truetype');
+}
+
+#signup-button {
+    text-align: center;
+    position: absolute;
+    bottom: 205px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.round-signup-button {
+    display: inline-block;
+    padding: 12px 24px; 
+    font-size: 18px; 
+    text-align: center;
+    text-decoration: none;
+    background-color: #AA6C39;
+    color: white; 
+    border-radius: 15px; 
+    transition: background-color 0.3s;
+    cursor: pointer; 
+    font-family: 'Federant';
+}
+
+.round-signup-button:hover {
+    background-color: rgb(235, 235, 196);
+    color: #AA6C39;
+}
+
+#password-match-message {
+    color: red;
+    display: block;
+    margin-top: -25px; 
+    height: auto; 
+    font-family: 'Federant';
+}
+
+.container p {
+    margin-top: -18px; 
+    font-size: 18px; 
+    color: #666; 
+    font-family: 'Federant';
+    padding: 5px 10px;
+}
+
+.container p a {
+    text-decoration: underline; 
+    color: #AA6C39; 
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.container p a:hover {
+    color: #FF7F50; 
+}
+
+
